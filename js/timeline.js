@@ -1,4 +1,4 @@
-```javascript id="t7m4qp"
+
 /* ======================================
    TIMELINE.JS
    Mariana & Pablo Wedding Invitation
