@@ -1,4 +1,4 @@
-```javascript id="qv6h5w"
+
 /* ======================================
    COUNTDOWN.JS
    Mariana & Pablo Wedding Invitation
