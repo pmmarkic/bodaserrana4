@@ -1,4 +1,4 @@
-```javascript id="g7k2qa"
+
 /* ======================================
    GALLERY.JS
    Mariana & Pablo Wedding Invitation
