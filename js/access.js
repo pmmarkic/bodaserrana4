@@ -1,4 +1,4 @@
-```javascript
+
 /* ======================================
    ACCESS.JS
    Mariana & Pablo Wedding Invitation
