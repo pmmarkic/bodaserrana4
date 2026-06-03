@@ -1,0 +1,606 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mariana Ailin & Pablo Matias | 10.10.2026</title>
+
+<meta name="description"
+content="Invitación de Casamiento - Mariana Ailin & Pablo Matias">
+
+<meta name="theme-color" content="#d8c3a5">
+
+<!-- OPEN GRAPH -->
+
+<meta property="og:title"
+content="Mariana Ailin & Pablo Matias">
+
+<meta property="og:description"
+content="10 de Octubre de 2026 · Villa Carlos Paz">
+
+<meta property="og:image"
+content="https://lh3.googleusercontent.com/u/0/d/1bLVhQeIa2dIusKwyq1B_T6bFjkSD4jB_">
+
+<meta property="og:type"
+content="website">
+
+<meta property="og:locale"
+content="es_AR">
+
+<!-- PWA -->
+
+<link rel="manifest" href="manifest.json">
+
+<!-- FAVICON -->
+
+<link rel="icon" href="favicon/favicon.ico">
+
+<!-- GOOGLE FONTS -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap"
+rel="stylesheet">
+
+<!-- AOS -->
+
+<link rel="stylesheet"
+href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+<!-- GLIGHTBOX -->
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+<!-- CSS -->
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/lightbox.css">
+<link rel="stylesheet" href="css/mobile.css">
+
+</head>
+
+<body>
+
+<!-- ================================= -->
+<!-- ACCESS SCREEN -->
+<!-- ================================= -->
+
+<div id="login-screen">
+
+    <div class="login-overlay"></div>
+
+    <div class="login-card">
+
+        <h1>Mariana Ailin</h1>
+
+        <span class="ampersand">&</span>
+
+        <h1>Pablo Matias</h1>
+
+        <p>Ingresá la contraseña para descubrir nuestra invitación</p>
+
+        <input
+        type="password"
+        id="password"
+        placeholder="Contraseña">
+
+        <button id="enter-btn">
+
+            Entrar
+
+        </button>
+
+        <small>
+            10 · 10 · 2026
+        </small>
+
+    </div>
+
+</div>
+
+<!-- ================================= -->
+<!-- MUSIC -->
+<!-- ================================= -->
+
+<audio
+id="bg-music"
+loop>
+
+<source
+src="assets/music/musica-boda.mp3"
+type="audio/mpeg">
+
+</audio>
+
+<!-- ================================= -->
+<!-- PARTICLES -->
+<!-- ================================= -->
+
+<div id="particles-js"></div>
+
+<!-- ================================= -->
+<!-- FLOAT MUSIC BUTTON -->
+<!-- ================================= -->
+
+<button id="music-toggle">
+
+🎵
+
+</button>
+
+<!-- ================================= -->
+<!-- SCROLL TOP -->
+<!-- ================================= -->
+
+<button id="scroll-top">
+
+↑
+
+</button>
+
+<!-- ================================= -->
+<!-- MAIN CONTENT -->
+<!-- ================================= -->
+
+<main id="site-content">
+
+<!-- ================================= -->
+<!-- HERO -->
+<!-- ================================= -->
+
+<section id="hero">
+
+    <div class="hero-image"></div>
+
+    <div class="hero-overlay">
+
+        <div class="hero-content">
+
+            <h1 data-aos="fade-up">
+
+                Mariana Ailin
+
+            </h1>
+
+            <span
+            class="hero-and"
+            data-aos="zoom-in">
+
+                &
+
+            </span>
+
+            <h1 data-aos="fade-up">
+
+                Pablo Matias
+
+            </h1>
+
+            <p data-aos="fade-up">
+
+                10 de Octubre de 2026
+
+            </p>
+
+            <a href="#countdown"
+            class="hero-btn">
+
+                Descubrir
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================= -->
+<!-- QUOTE -->
+<!-- ================================= -->
+
+<section
+id="quote"
+data-aos="fade-up">
+
+    <p>
+
+        “El amor no consiste en mirarse el uno al otro,
+        sino en mirar juntos en la misma dirección.”
+
+    </p>
+
+</section>
+
+<!-- ================================= -->
+<!-- COUNTDOWN -->
+<!-- ================================= -->
+
+<section id="countdown">
+
+<h2 data-aos="fade-up">
+
+Faltan
+
+</h2>
+
+<div class="countdown-grid">
+
+<div class="counter-box">
+
+<span id="days">00</span>
+
+<p>Días</p>
+
+</div>
+
+<div class="counter-box">
+
+<span id="hours">00</span>
+
+<p>Horas</p>
+
+</div>
+
+<div class="counter-box">
+
+<span id="minutes">00</span>
+
+<p>Minutos</p>
+
+</div>
+
+<div class="counter-box">
+
+<span id="seconds">00</span>
+
+<p>Segundos</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================================= -->
+<!-- EVENT -->
+<!-- ================================= -->
+
+<section
+id="event"
+data-aos="fade-up">
+
+<h2>
+
+La Celebración
+
+</h2>
+
+<div class="event-card">
+
+<p class="event-date">
+
+10 de Octubre de 2026
+
+</p>
+
+<p class="event-time">
+
+18:00 hs
+
+</p>
+
+<p class="event-address">
+
+Av. Perito Moreno 1760
+
+</p>
+
+<p>
+
+Villa Carlos Paz · Córdoba
+
+</p>
+
+<a
+class="btn-primary"
+target="_blank"
+href="https://maps.app.goo.gl/qtxSwoMXrxTWdYDj7">
+
+Ver Ubicación
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ================================= -->
+<!-- MAP -->
+<!-- ================================= -->
+
+<section
+id="map"
+data-aos="fade-up">
+
+<iframe
+loading="lazy"
+allowfullscreen
+referrerpolicy="no-referrer-when-downgrade"
+src="https://www.google.com/maps?q=Av.+Perito+Moreno+1760+Villa+Carlos+Paz&output=embed">
+</iframe>
+
+</section>
+
+<!-- ================================= -->
+<!-- TIMELINE -->
+<!-- ================================= -->
+
+<section id="timeline">
+
+<h2 data-aos="fade-up">
+
+Nuestra Historia
+
+</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<h3>Nos Conocimos</h3>
+
+<p>
+Cada gran historia tiene un comienzo.
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>Nos Elegimos</h3>
+
+<p>
+Entre millones de caminos,
+elegimos caminar juntos.
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>El Sí</h3>
+
+<p>
+10 de Octubre de 2026
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================================= -->
+<!-- GALLERY -->
+<!-- ================================= -->
+
+<section id="gallery">
+
+<h2 data-aos="fade-up">
+
+Nuestros Momentos
+
+</h2>
+
+<div class="gallery-grid">
+
+<a
+href="https://lh3.googleusercontent.com/u/0/d/1tlT2ReeNAS4ieb19Jm00QGtyBEhDEQuM"
+class="glightbox">
+
+<img src="https://lh3.googleusercontent.com/u/0/d/1tlT2ReeNAS4ieb19Jm00QGtyBEhDEQuM">
+
+</a>
+
+<a
+href="https://lh3.googleusercontent.com/u/0/d/1Xav2XoKtBzSUgpURQbCxooRS-NU0jbYJ"
+class="glightbox">
+
+<img src="https://lh3.googleusercontent.com/u/0/d/1Xav2XoKtBzSUgpURQbCxooRS-NU0jbYJ">
+
+</a>
+
+<a
+href="https://lh3.googleusercontent.com/u/0/d/14l18yZX0dpCWRDkcm9eJUmriloBrUOlh"
+class="glightbox">
+
+<img src="https://lh3.googleusercontent.com/u/0/d/14l18yZX0dpCWRDkcm9eJUmriloBrUOlh">
+
+</a>
+
+<a
+href="https://lh3.googleusercontent.com/u/0/d/1S7YECUH7Z2UefnnjJAvKKb1yDBs0csIs"
+class="glightbox">
+
+<img src="https://lh3.googleusercontent.com/u/0/d/1S7YECUH7Z2UefnnjJAvKKb1yDBs0csIs">
+
+</a>
+
+<a
+href="https://lh3.googleusercontent.com/u/0/d/1TF802gaYDxQzyCLz83NycMSWmiCbv4ka"
+class="glightbox">
+
+<img src="https://lh3.googleusercontent.com/u/0/d/1TF802gaYDxQzyCLz83NycMSWmiCbv4ka">
+
+</a>
+
+<a
+href="https://lh3.googleusercontent.com/u/0/d/1kQ39Vy7_4fz64xyDnOUp9gwQXQjNG0AB"
+class="glightbox">
+
+<img src="https://lh3.googleusercontent.com/u/0/d/1kQ39Vy7_4fz64xyDnOUp9gwQXQjNG0AB">
+
+</a>
+
+<a
+href="https://lh3.googleusercontent.com/u/0/d/1SgLcxr85qhUtKcF5xwcxUvx4ieBCCW_-"
+class="glightbox">
+
+<img src="https://lh3.googleusercontent.com/u/0/d/1SgLcxr85qhUtKcF5xwcxUvx4ieBCCW_-">
+
+</a>
+
+<a
+href="https://lh3.googleusercontent.com/u/0/d/1uNSdorGDmzCNHbpKE11blcOLxFDEqTqX"
+class="glightbox">
+
+<img src="https://lh3.googleusercontent.com/u/0/d/1uNSdorGDmzCNHbpKE11blcOLxFDEqTqX">
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ================================= -->
+<!-- PLAYLIST -->
+<!-- ================================= -->
+
+<section
+id="playlist"
+data-aos="fade-up">
+
+<h2>
+
+Nuestra Playlist
+
+</h2>
+
+<a
+target="_blank"
+class="btn-primary"
+href="https://open.spotify.com/playlist/7vgeaLq7H23qs4Ox2wvUUm?si=0b336a9dcc3f402c">
+
+Escuchar en Spotify
+
+</a>
+
+</section>
+
+<!-- ================================= -->
+<!-- GIFTS -->
+<!-- ================================= -->
+
+<section
+id="gifts"
+data-aos="fade-up">
+
+<h2>
+
+Regalos
+
+</h2>
+
+<p>
+
+Tu presencia es nuestro mejor regalo.
+
+Si querés acompañarnos con un obsequio:
+
+</p>
+
+<div class="gift-card">
+
+<h3>Alias</h3>
+
+<p>bodayfernet</p>
+
+<h3>Titular</h3>
+
+<p>Mariana Ailin Limarino</p>
+
+</div>
+
+</section>
+
+<!-- ================================= -->
+<!-- RSVP -->
+<!-- ================================= -->
+
+<section
+id="rsvp"
+data-aos="fade-up">
+
+<h2>
+
+Confirmá tu asistencia
+
+</h2>
+
+<a
+class="btn-primary"
+target="_blank"
+href="https://forms.gle/sYidah81RkVCP72d6">
+
+Confirmar Asistencia
+
+</a>
+
+</section>
+
+<!-- ================================= -->
+<!-- FOOTER -->
+<!-- ================================= -->
+
+<footer>
+
+<h3>
+
+Mariana Ailin & Pablo Matias
+
+</h3>
+
+<p>
+
+10 · 10 · 2026
+
+</p>
+
+</footer>
+
+</main>
+
+<!-- LIBS -->
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+<!-- JS -->
+
+<script src="js/access.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/music.js"></script>
+<script src="js/timeline.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
+```
