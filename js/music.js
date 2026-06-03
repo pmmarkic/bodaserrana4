@@ -1,4 +1,4 @@
-```javascript
+
 /* ======================================
    MUSIC.JS
    Mariana & Pablo Wedding Invitation
