@@ -176,4 +176,3 @@ window.addEventListener("load", () => {
     enableLowPowerParticles();
 
 });
-```
