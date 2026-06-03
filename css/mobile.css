@@ -1,0 +1,393 @@
+```css
+/* ======================================
+   MOBILE.CSS
+   Responsive Premium
+   Mariana & Pablo
+====================================== */
+
+/* =========================
+   TABLETS
+========================= */
+
+@media screen and (max-width: 1024px){
+
+    section{
+        padding:90px 7%;
+    }
+
+    h1{
+        font-size:4rem;
+    }
+
+    h2{
+        font-size:2.5rem;
+    }
+
+    .hero-content{
+        width:90%;
+    }
+
+    .countdown-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    .gallery-grid{
+        column-count:3;
+    }
+
+    .timeline-item{
+        width:80%;
+    }
+
+}
+
+/* =========================
+   LARGE MOBILE
+========================= */
+
+@media screen and (max-width: 768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    section{
+        padding:80px 25px;
+    }
+
+    h1{
+        font-size:3rem;
+        line-height:1.1;
+    }
+
+    h2{
+        font-size:2.2rem;
+    }
+
+    h3{
+        font-size:1.7rem;
+    }
+
+    p{
+        font-size:.95rem;
+    }
+
+    /* HERO */
+
+    #hero{
+        height:100vh;
+        min-height:700px;
+    }
+
+    .hero-image{
+        background-attachment:scroll;
+    }
+
+    .hero-content{
+        width:90%;
+        padding:0 15px;
+    }
+
+    .hero-content p{
+        letter-spacing:.12em;
+        font-size:.9rem;
+    }
+
+    .hero-and{
+        font-size:3rem;
+    }
+
+    .hero-btn{
+        width:100%;
+        max-width:280px;
+    }
+
+    /* LOGIN */
+
+    .login-card{
+
+        width:92%;
+
+        padding:40px 25px;
+
+        border-radius:25px;
+    }
+
+    .login-card h1{
+        font-size:2.2rem;
+    }
+
+    .ampersand{
+        font-size:2rem;
+    }
+
+    #password{
+        padding:15px;
+    }
+
+    #enter-btn{
+        padding:15px;
+    }
+
+    /* QUOTE */
+
+    #quote p{
+        font-size:1.5rem;
+        line-height:1.4;
+    }
+
+    /* COUNTDOWN */
+
+    .countdown-grid{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+        gap:15px;
+    }
+
+    .counter-box{
+
+        padding:25px 15px;
+    }
+
+    .counter-box span{
+        font-size:2.4rem;
+    }
+
+    /* EVENT */
+
+    .event-card{
+
+        padding:35px 25px;
+    }
+
+    .event-date{
+        font-size:1.6rem;
+    }
+
+    .event-time{
+        font-size:1.2rem;
+    }
+
+    /* MAP */
+
+    #map iframe{
+        height:350px;
+        border-radius:20px;
+    }
+
+    /* TIMELINE */
+
+    .timeline{
+        padding-left:25px;
+    }
+
+    .timeline::before{
+
+        left:12px;
+    }
+
+    .timeline-item{
+
+        width:100%;
+
+        margin:25px 0;
+
+        padding:25px;
+    }
+
+    .timeline-item:nth-child(odd){
+        margin-left:0;
+    }
+
+    .timeline-item:nth-child(even){
+        margin-left:0;
+    }
+
+    /* GALLERY */
+
+    .gallery-grid{
+        column-count:2;
+        column-gap:12px;
+    }
+
+    .gallery-grid a{
+        margin-bottom:12px;
+    }
+
+    /* GIFTS */
+
+    .gift-card{
+
+        padding:35px 25px;
+    }
+
+    /* BUTTONS */
+
+    .btn-primary,
+    .hero-btn{
+
+        width:100%;
+
+        text-align:center;
+    }
+
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media screen and (max-width: 480px){
+
+    section{
+        padding:70px 18px;
+    }
+
+    h1{
+        font-size:2.4rem;
+    }
+
+    h2{
+        font-size:2rem;
+    }
+
+    h3{
+        font-size:1.4rem;
+    }
+
+    p{
+        font-size:.92rem;
+    }
+
+    .hero-content{
+
+        width:100%;
+    }
+
+    .hero-content p{
+
+        margin-top:18px;
+    }
+
+    .hero-and{
+
+        font-size:2.3rem;
+    }
+
+    /* COUNTDOWN */
+
+    .countdown-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .counter-box{
+
+        padding:22px;
+    }
+
+    .counter-box span{
+
+        font-size:2rem;
+    }
+
+    /* GALLERY */
+
+    .gallery-grid{
+
+        column-count:1;
+    }
+
+    /* MAP */
+
+    #map iframe{
+
+        height:280px;
+    }
+
+    /* FLOATING BUTTONS */
+
+    #music-toggle,
+    #scroll-top{
+
+        width:50px;
+
+        height:50px;
+
+        font-size:18px;
+    }
+
+    #music-toggle{
+
+        bottom:90px;
+    }
+
+    #scroll-top{
+
+        bottom:25px;
+    }
+
+    /* LOGIN */
+
+    .login-card{
+
+        padding:30px 20px;
+    }
+
+    .login-card h1{
+
+        font-size:1.9rem;
+    }
+
+}
+
+/* =========================
+   EXTRA SMALL DEVICES
+========================= */
+
+@media screen and (max-width: 360px){
+
+    h1{
+        font-size:2rem;
+    }
+
+    h2{
+        font-size:1.8rem;
+    }
+
+    .counter-box span{
+        font-size:1.8rem;
+    }
+
+    .hero-btn,
+    .btn-primary{
+        padding:14px 20px;
+    }
+
+}
+
+/* =========================
+   LANDSCAPE PHONES
+========================= */
+
+@media screen and (max-height: 500px)
+and (orientation: landscape){
+
+    #hero{
+        height:auto;
+        min-height:550px;
+    }
+
+    .hero-content{
+        padding:60px 0;
+    }
+
+    .login-card{
+        transform:scale(.9);
+    }
+
+}
+```

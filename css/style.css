@@ -1,0 +1,682 @@
+```css
+/* =======================================
+   MARIANA & PABLO
+   PREMIUM WEDDING INVITATION
+   STYLE.CSS
+======================================= */
+
+:root {
+
+    --gold: #c8ab83;
+    --gold-light: #e7d7c0;
+
+    --cream: #faf7f2;
+    --white: #ffffff;
+
+    --dark: #222222;
+    --gray: #666666;
+
+    --shadow:
+        0 15px 35px rgba(0,0,0,.08);
+
+    --radius: 24px;
+
+}
+
+/* =======================================
+   RESET
+======================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Montserrat',sans-serif;
+
+    background:var(--cream);
+
+    color:var(--dark);
+
+    overflow-x:hidden;
+
+    line-height:1.7;
+}
+
+/* =======================================
+   TYPOGRAPHY
+======================================= */
+
+h1,h2,h3{
+
+    font-family:
+    'Cormorant Garamond',
+    serif;
+
+    font-weight:500;
+
+    letter-spacing:.05em;
+}
+
+h1{
+    font-size:5rem;
+}
+
+h2{
+    font-size:3rem;
+    margin-bottom:30px;
+}
+
+h3{
+    font-size:2rem;
+}
+
+p{
+    font-size:1rem;
+    color:var(--gray);
+}
+
+/* =======================================
+   ACCESS SCREEN
+======================================= */
+
+#login-screen{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:99999;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,.5),
+    rgba(0,0,0,.5)),
+
+    url("https://lh3.googleusercontent.com/u/0/d/1bLVhQeIa2dIusKwyq1B_T6bFjkSD4jB_")
+    center center/cover;
+}
+
+.login-card{
+
+    width:90%;
+    max-width:520px;
+
+    padding:60px;
+
+    text-align:center;
+
+    border-radius:30px;
+
+    backdrop-filter:blur(25px);
+
+    background:
+
+    rgba(255,255,255,.12);
+
+    border:
+
+    1px solid rgba(255,255,255,.25);
+
+    color:white;
+}
+
+.login-card h1{
+
+    color:white;
+
+    font-size:3rem;
+}
+
+.ampersand{
+
+    display:block;
+
+    font-size:3rem;
+
+    color:var(--gold);
+
+    margin:10px 0;
+}
+
+.login-card p{
+
+    color:white;
+
+    margin:20px 0;
+}
+
+#password{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:12px;
+
+    margin-top:20px;
+
+    outline:none;
+}
+
+#enter-btn{
+
+    width:100%;
+
+    margin-top:15px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    background:var(--gold);
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+#enter-btn:hover{
+
+    transform:translateY(-2px);
+
+    background:#b79469;
+}
+
+/* =======================================
+   HERO
+======================================= */
+
+#hero{
+
+    position:relative;
+
+    height:100vh;
+
+    overflow:hidden;
+}
+
+.hero-image{
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+
+    url("https://lh3.googleusercontent.com/u/0/d/1bLVhQeIa2dIusKwyq1B_T6bFjkSD4jB_");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+
+    transform:scale(1.05);
+}
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,.3),
+    rgba(0,0,0,.45));
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+}
+
+.hero-content{
+
+    color:white;
+
+    z-index:2;
+}
+
+.hero-content h1{
+
+    color:white;
+}
+
+.hero-content p{
+
+    color:white;
+
+    margin-top:25px;
+
+    letter-spacing:.2em;
+
+    text-transform:uppercase;
+}
+
+.hero-and{
+
+    display:block;
+
+    color:var(--gold);
+
+    font-size:4rem;
+
+    margin:10px 0;
+}
+
+/* =======================================
+   BUTTONS
+======================================= */
+
+.btn-primary,
+.hero-btn{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:15px 35px;
+
+    border-radius:999px;
+
+    text-decoration:none;
+
+    background:var(--gold);
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.btn-primary:hover,
+.hero-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+    0 15px 30px rgba(0,0,0,.12);
+}
+
+/* =======================================
+   SECTIONS
+======================================= */
+
+section{
+
+    padding:120px 10%;
+}
+
+section h2{
+
+    text-align:center;
+}
+
+/* =======================================
+   QUOTE
+======================================= */
+
+#quote{
+
+    text-align:center;
+
+    max-width:900px;
+
+    margin:auto;
+}
+
+#quote p{
+
+    font-size:2rem;
+
+    font-family:
+    'Cormorant Garamond',
+    serif;
+
+    color:var(--dark);
+}
+
+/* =======================================
+   COUNTDOWN
+======================================= */
+
+.countdown-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(4,1fr);
+
+    gap:25px;
+
+    margin-top:40px;
+}
+
+.counter-box{
+
+    background:white;
+
+    border-radius:var(--radius);
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+}
+
+.counter-box span{
+
+    display:block;
+
+    font-size:3rem;
+
+    color:var(--gold);
+
+    font-weight:700;
+}
+
+/* =======================================
+   EVENT
+======================================= */
+
+.event-card{
+
+    max-width:700px;
+
+    margin:auto;
+
+    padding:60px;
+
+    text-align:center;
+
+    background:white;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+}
+
+.event-date{
+
+    font-size:2rem;
+
+    color:var(--gold);
+}
+
+.event-time{
+
+    font-size:1.5rem;
+
+    margin:10px 0;
+}
+
+/* =======================================
+   MAP
+======================================= */
+
+#map iframe{
+
+    width:100%;
+
+    height:500px;
+
+    border:none;
+
+    border-radius:30px;
+
+    box-shadow:var(--shadow);
+}
+
+/* =======================================
+   TIMELINE
+======================================= */
+
+.timeline{
+
+    position:relative;
+
+    max-width:900px;
+
+    margin:auto;
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    top:0;
+
+    width:2px;
+
+    height:100%;
+
+    background:var(--gold);
+}
+
+.timeline-item{
+
+    width:45%;
+
+    padding:30px;
+
+    background:white;
+
+    margin:50px 0;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+}
+
+.timeline-item:nth-child(odd){
+
+    margin-right:auto;
+}
+
+.timeline-item:nth-child(even){
+
+    margin-left:auto;
+}
+
+/* =======================================
+   GALLERY
+======================================= */
+
+.gallery-grid{
+
+    column-count:4;
+
+    column-gap:20px;
+}
+
+.gallery-grid a{
+
+    display:block;
+
+    margin-bottom:20px;
+
+    overflow:hidden;
+
+    border-radius:20px;
+}
+
+.gallery-grid img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.5s;
+}
+
+.gallery-grid img:hover{
+
+    transform:scale(1.06);
+}
+
+/* =======================================
+   PLAYLIST
+======================================= */
+
+#playlist{
+
+    text-align:center;
+}
+
+/* =======================================
+   GIFTS
+======================================= */
+
+.gift-card{
+
+    max-width:600px;
+
+    margin:auto;
+
+    padding:50px;
+
+    text-align:center;
+
+    background:white;
+
+    border-radius:30px;
+
+    box-shadow:var(--shadow);
+}
+
+.gift-card h3{
+
+    color:var(--gold);
+}
+
+/* =======================================
+   RSVP
+======================================= */
+
+#rsvp{
+
+    text-align:center;
+}
+
+/* =======================================
+   FOOTER
+======================================= */
+
+footer{
+
+    padding:80px 20px;
+
+    text-align:center;
+
+    background:#f2ebe2;
+}
+
+footer h3{
+
+    margin-bottom:10px;
+}
+
+/* =======================================
+   FLOAT BUTTONS
+======================================= */
+
+#music-toggle,
+#scroll-top{
+
+    position:fixed;
+
+    right:25px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    background:var(--gold);
+
+    color:white;
+
+    font-size:20px;
+
+    z-index:999;
+
+    box-shadow:var(--shadow);
+}
+
+#music-toggle{
+
+    bottom:100px;
+}
+
+#scroll-top{
+
+    bottom:30px;
+}
+
+/* =======================================
+   PARTICLES
+======================================= */
+
+#particles-js{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:0;
+}
+
+/* =======================================
+   MAIN CONTENT
+======================================= */
+
+#site-content{
+
+    position:relative;
+
+    z-index:1;
+}
+```
