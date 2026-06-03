@@ -263,4 +263,3 @@ function getWeddingDate(){
     return "10/10/2026 18:00";
 
 }
-```
