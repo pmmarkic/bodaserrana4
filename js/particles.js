@@ -1,4 +1,4 @@
-```javascript id="p9k3ld"
+
 /* ======================================
    PARTICLES.JS CONFIG
    Mariana & Pablo Wedding Invitation
